@@ -42,3 +42,10 @@ Contains Inbuilt Elastic Regularisation,which can be used by setting reg_alpha b
  
  Use accuracy(X,Y,Y_pred) to get the accuracy
  
+ ## K-nearest Neighbours
+ 
+ use model = KNN(K,dist_func) user should specify the value of K,distance function while initializing the model.Supported distance functions are euclidian and manhattan.
+ 
+ use model.fit(X,Y) to store the train datapoints.  
+ use model.classify(X) to classify the given dataset  
+ use model.accuracy(X) to get the accuraccy.
