@@ -2,7 +2,7 @@
 
 This Repository Contains Notebooks Containing Linear Regression,Polynomial Regression,Logistic Regression,Neural Network,K-nearest Neighbours.
 
-##LinearRegression.ipynb :-
+## LinearRegression.ipynb :-
 
 Use modelname = LinearRegression(learning_rate,iter) to initialize the model,where iter is the number of iterations for training.  
 Use modelname.fit(X,Y) to fit the model using X against Y.   
@@ -10,7 +10,7 @@ Use modelname.predict(X) to make predicitons.
 Use modelname.Showmetrics(X,Y) to show the scoring metrics rmse,mae,mse,r2score when tested on X,with true values Y.   
 Contains inbuilt Z-score normalized.  
 
-##PolynomialRegression.ipynb :-
+## PolynomialRegression.ipynb :-
 
 Use modelname = PolynomialRegression(deg,learning_rate=0.001,epochs=10000,lambda1 = 0, lambda2 = 0.02,tol = 0.001,reg_alpha=0) the hyperparameter values can be changed as per user's convinience.   
 
@@ -30,8 +30,7 @@ Contains Inbuilt Elastic Regularisation,which can be used by setting reg_alpha b
  use model.fit(X,Y,n_classes=10) to train the model using X,Y and user can specify the no of classes   
  use model.pred(X) to make predictions   
  use model.accuracy(X,Y) to get the accuracy of the model.   
- 
- ##L-layer Neural Network:- 
+ ## L-layer Neural Network:- 
  
  Use model = NNeuralNetwork(layer_sizes,activation) ,user has to input the size of each layer in an list format,and specify the activation function.(Supported activations are sigmoid,ReLU,Leaky ReLU,tanh)
  
