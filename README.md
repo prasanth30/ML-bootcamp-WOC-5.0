@@ -27,3 +27,18 @@ Contains Inbuilt Elastic Regularisation,which can be used by setting reg_alpha b
  
  Use model = logisticregression(typ='softmax',learning_rate=0.001,epochs=1000,base=0.5,reg_lambda=0) to initialize the model ,user can specify type of logistic regression,softmax or onevsall,specify the hyperparameters while initializing the model.
  use model.fit(X,Y,n_classes=10) to train the model using X,Y and user can specify the no of classes
+ use model.pred(X) to make predictions
+ use model.accuracy(X,Y) to get the accuracy of the model.
+ 
+ L-layer Neural Network:- 
+ 
+ Use model = NNeuralNetwork(layer_sizes,activation) ,user has to input the size of each layer in an list format,and specify the activation function.(Supported activations are sigmoid,ReLU,Leaky ReLU,tanh)
+ 
+ Use model.train(X,Y,X_cv,Y_cv,learning_rate=0.0001,epochs=16,batch_size = 32, beta1=0.9, beta2 = 0.999,epsilon = 1e-8,show_epochs=True) to train the model against X,Y and use X_cv,Y_cv for validation accuracy. user can change the hyperparameters above to their need.
+ 
+ Use model.predict(X) to make predictions
+ 
+ Use model.confusion_matrix(X,Y_test,Y_pred) to get confusion matrix
+ 
+ Use accuracy(X,Y,Y_pred) to get the accuracy
+ 
